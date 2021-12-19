@@ -31,7 +31,11 @@
       <br>•	 The public <b>peek()</b> method returns the element stored in the top <b>Stackentry</b> without removing them, but if the stack is empty null is returned instead.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/BTreeImpl.java"><b>BTreeImpl.java</b></a></li>
-    <p>•	A BTree 
-       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
+    <p>•	A BTree is a balanced-tree that supports external search in symbol tables that are kept on a disk or on the web.
+      <br>•	 The public <b>get()</b> 
+      <br>•	 The public <b>put()</b>
+      <br>•	 The public <b>moveToDisk()</b>
+      <br>•	 The public <b>setPersistenceManager()</b>
+      <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     </ul>
  
