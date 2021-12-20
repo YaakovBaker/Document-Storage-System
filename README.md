@@ -4,6 +4,14 @@
 <ul>
   <li><a href = "#Summary">Summary</a></li>
   <li><a href = "#DS">Data Structures</a></li>
+    <p>
+      <ul>
+        <li><a href = "Trie">Trie</a></li>
+        <li><a href = "MinHeap">MinHeap</a></li>
+        <li><a href = "Stack">Stack</a></li>
+        <li><a href = "BTree">BTree</a></li>
+      </ul>
+   </p>
  </ul>
 
 <h3><a name = "Summary"><Strong>Summary</Strong></a></h3>
@@ -12,7 +20,7 @@
  <h3><a name = "DS" href = "https://github.com/YaakovBaker/Document-Storage-System/tree/main/stage5/src/main/java/edu/yu/cs/com1320/project">Data Structures</a></h3>
  <p><br>• This project used several data structures during its life time. Every new stage of the project incorporated a new data structure or replaced an old one, like how the Btree replaced the HashTable for storage. In this final stage of the project the data structures used were a Trie for searching, a Stack to undo actions, a Heap to keep track of the last use time of a document, and a BTree to store documents in memory and their refrences on disk.
   <ul type = "disc">
-    <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/TrieImpl.java"><b>TrieImpl.java</b></a></li>
+    <li><a name = "Trie" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/TrieImpl.java"><b>TrieImpl.java</b></a></li>
     <p>•	A Trie is a search tree that is used for string searchs. A trie consists of nodes starting from the root where every node has one parent and many children nodes (links) stored in an array that is of a specified alphabet size. Each index in the array corresponds to a character value where a node is stored that corresponds to that character and within that node values may be stored like documents in our case, and another array of that nodes links. My <i>TrieImpl</i> offers put, delete, and search type of methods.
       <br>•	 The public <b>put()</b> method accepts a <b>String</b> key and <b>Document</b> value to store as one of that keys values for a later search. This put calls a private put that recursively traverses down the trie and adds absent links until it finally reaches the end of the key where it will store the document. 
       <br>•	The public <b>getAllSorted()</b> method accepts a <b>String</b> key and a <b>Comparator</b> to return all the documents stored within that key sorted in a <b>List</b>. This search method calls a private <b>get()</b> method to recursively traverse the trie to find the node corresponding to the provided key so that we can access the documents stored there to be returned. If the link is null or the values are null or the set containing them is empty then it returns an empty <b>List</b>. 
@@ -21,7 +29,7 @@
       <br>•	The public <b>deleteAllWithPrefix()</b> method accepts a <b>String</b> prefix as an argument and calls the private <b>getForPrefix()</b> method to get the list of values that will be deleted and then calls the private <b>get()</b> to get the node that's subtrie's values will be deleted. If the subtrie rooted at every node visited is not empty then we will return that node to its parent, otherwise we will return null and remove the existence of that node.
       <br>•	The public <b>delete()</b> accepts a <b>String</b> key and <b>Document</b> value. It calles the private <b>get()</b> to get the node of that key and then loop though that node's values until it finds the value to delete and save it in a local variable. Then the private <b>delete()</b> is called starting at the root and recursively traversing the trie until the node is foudn and the specified value is deleted. Then if this node still has values return it otherwise see if any of its links exist, if they exist return this node otherwise return null to the parent.<br></p>
     <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
-    <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/MinHeapImpl.java"><b>MinHeapImpl.java</b></a></li>
+    <li><a name = "MinHeap" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/MinHeapImpl.java"><b>MinHeapImpl.java</b></a></li>
     <p>•	A MinHeap is a tree where keys are stored in an array and where parents must be smaller than its children. This MinHeap is of a binary heap representation. A heap is a complete tree as each level except possibly the lowestlevel is completely filled with nodes. If the bottom isn't completely filled, the nodes at the bottom will be filled up from the left. The height of a complete binary tree of size n is log(n). This data structure allows for efficient inserts and deletes.
       <br>•	 The protected <b>upHeap()</b> method accepts an index as an argument. While the key at that index is less than its parent's key, swap its contents with its parent’s.  
       <br>•	 The protected <b>downHeap()</b> method accepts an index as an argument. It then identifies which of its children are smaller and if it is greater than that child swap them and continue testing until our element is in the correct spot.
@@ -30,13 +38,13 @@
       <br>•	 The public <b>insert()</b> method accepts an element of generic type as an argument. If the number of elements is greater than or equal to the size of the array minus one than the protected <b>doubleArraySize()</b> method is called. The element is then inserted at the bottom of the heap and <b>upHeap()</b> is called to maintain the MinHeap properties.
       <br>•	 The public <b>remove()</b> method throws a <b>NoSuchElementException</b> if the heap is empty, otherwise it saves the minimum value to be deleted in a local variable and calls swap on index 1, its location, and the element at the bottom of the heap and decrement the count of elements. <b>downHeap()</b> is then called to maintain heap properties and then the location where the to be deleted element is at is set to null.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
-    <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/StackImpl.java"><b>StackImpl.java</b></a></li>
+    <li><a name = "Stack" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/StackImpl.java"><b>StackImpl.java</b></a></li>
     <p>•	A Stack stores a sequence of values in LIFO order (Last-In, First-Out). The top of the stack is where operations occur. If you want to do more than just the operations on the top of the stack then that is up to client code you create to use the operations of the stack with extra logic you include in your client code to do what you want. I implement my Stack to work like a linked list. The elements of the Stack are a <b>StackEntry</b> that contains a pointer to the next element in the stack and the data being stored. The Stack data structure itself contains a pointer to the entry at the top.
       <br>•	 The public <b>push()</b> method accepts an element of a generic type. If it is null then an <b>IllegalArgumentException()</b> is thrown, otherwise a new <b>Stackentry</b> is created and passed that element to store it. It's next link becomes what is currently the top and then replaces it as the new top.
       <br>•	 The public <b>pop()</b> method returns the element at the top of the stack and removes it. If the stack is empty then null is returned, otherwise the data stored in the top <b>StackEntry</b> is stored into a local variable, the top pointer points to the top <b>StackEntry's</b> next <b>StackEntry</b> as to remove any refrence to the previous top of the stack and then that local variable is returned.
       <br>•	 The public <b>peek()</b> method returns the element stored in the top <b>Stackentry</b> without removing them, but if the stack is empty null is returned instead.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
-    <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/BTreeImpl.java"><b>BTreeImpl.java</b></a></li>
+    <li><a name = "BTree" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/BTreeImpl.java"><b>BTreeImpl.java</b></a></li>
     <p>•	A BTree is a balanced-tree that supports external search in symbol tables that are kept on a disk or on the web. (Got tired, finish later)
       <br>•	 The public <b>get()</b> method accepts a generic type Key as an argument. If that key is null then an <b>IllegalArgumentException()</b> is thrown, otherwise it calls the private <b>get()</b> which recursively
       <br>•	 The public <b>put()</b>
