@@ -6,10 +6,10 @@
   <li><a href = "#DS">Data Structures</a></li>
     <p>
       <ul>
-        <li><a href = "Trie">Trie</a></li>
-        <li><a href = "MinHeap">MinHeap</a></li>
-        <li><a href = "Stack">Stack</a></li>
-        <li><a href = "BTree">BTree</a></li>
+        <li><a href = "#Trie">Trie</a></li>
+        <li><a href = "#MinHeap">MinHeap</a></li>
+        <li><a href = "#Stack">Stack</a></li>
+        <li><a href = "#BTree">BTree</a></li>
       </ul>
    </p>
  </ul>
