@@ -38,7 +38,7 @@
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     <li><a href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/BTreeImpl.java"><b>BTreeImpl.java</b></a></li>
     <p>•	A BTree is a balanced-tree that supports external search in symbol tables that are kept on a disk or on the web. (Got tired, finish later)
-      <br>•	 The public <b>get()</b> 
+      <br>•	 The public <b>get()</b> method accepts a generic type Key as an argument. If that key is null then an <b>IllegalArgumentException()</b> is thrown, otherwise it calls the private <b>get()</b> which recursively
       <br>•	 The public <b>put()</b>
       <br>•	 The public <b>moveToDisk()</b>
       <br>•	 The public <b>setPersistenceManager()</b>
