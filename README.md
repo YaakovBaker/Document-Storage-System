@@ -7,6 +7,11 @@
     <p>
       <ul>
         <li><a href = "#Trie">Trie</a></li>
+          <p>
+            <ul>
+              <li><a href = "#Description-Trie">Description</a></li>
+            </ul>
+          </p>
         <li><a href = "#MinHeap">MinHeap</a></li>
         <li><a href = "#Stack">Stack</a></li>
         <li><a href = "#BTree">BTree</a></li>
@@ -21,7 +26,7 @@
  <p><br>• This project used several data structures during its life time. Every new stage of the project incorporated a new data structure or replaced an old one, like how the Btree replaced the HashTable for storage. In this final stage of the project the data structures used were a Trie for searching, a Stack to undo actions, a Heap to keep track of the last use time of a document, and a BTree to store documents in memory and their refrences on disk.
   <ul type = "disc">
     <li><a name = "Trie" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/TrieImpl.java"><b>TrieImpl.java</b></a></li>
-    <p>•	A Trie is a search tree that is used for string searchs. A trie consists of nodes starting from the root where every node has one parent and many children nodes (links) stored in an array that is of a specified alphabet size. Each index in the array corresponds to a character value where a node is stored that corresponds to that character and within that node values may be stored like documents in our case, and another array of that nodes links. My <i>TrieImpl</i> offers put, delete, and search type of methods.
+    <p>•	<a name = "Description-Trie">A Trie</a> is a search tree that is used for string searchs. A trie consists of nodes starting from the root where every node has one parent and many children nodes (links) stored in an array that is of a specified alphabet size. Each index in the array corresponds to a character value where a node is stored that corresponds to that character and within that node values may be stored like documents in our case, and another array of that nodes links. My <i>TrieImpl</i> offers put, delete, and search type of methods.
       <br>•	 The public <b>put()</b> method accepts a <b>String</b> key and <b>Document</b> value to store as one of that keys values for a later search. This put calls a private put that recursively traverses down the trie and adds absent links until it finally reaches the end of the key where it will store the document. 
       <br>•	The public <b>getAllSorted()</b> method accepts a <b>String</b> key and a <b>Comparator</b> to return all the documents stored within that key sorted in a <b>List</b>. This search method calls a private <b>get()</b> method to recursively traverse the trie to find the node corresponding to the provided key so that we can access the documents stored there to be returned. If the link is null or the values are null or the set containing them is empty then it returns an empty <b>List</b>. 
       <br>•	The public <b>getAllWithPrefixSorted()</b> method accepts a <b>String</b> prefix and a <b>Comparator</b> to return all the documents with that given prefix sorted in a <b>List</b>. This prefix search calls a private <b>getForPrefix()</b> method that recursively goes down the trie visiting every node with this prefix and storing all the documents found into a set.
