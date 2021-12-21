@@ -102,6 +102,11 @@
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     </ul>
  </p>
+ 
+ <h3><a name = "DocumentImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentImpl.java">DocumentImpl</a></h3>
+ <h3><a name = "DocumentPersistenceManager" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentPersistenceManager.java">DocumentPersistenceManager</a></h3>
+  <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
+  
  <p>
 <a href ="#TOP">Back To Top</a><br>
 <a href = "https://www.linkedin.com/in/yaakovbaker01/">LinkedIn</a>
