@@ -104,7 +104,8 @@
  </p>
  
  <h3><a name = "DocumentImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentImpl.java">DocumentImpl</a></h3>
- <p>SOON TO BE ADDED<br></p>
+ <p><br>•	 A <b>Document</b> consists of a <i>URI</i> from <i>java.net.URI</i>, either a <i>String</i> of text or an array of bytes, a <i>Map</i> of the word counts for each <i>String</i> in the <b>Document</b>'s text if it has one, and the last use time of that <b>Document</b>. <i>DocumentImpl</i> consists of three constructors. One that accepts a <i>URI</i> and <i>String</i> of text, another that accepts a <i>URI</i> and an array of bytes, and lastly a special one that accepts a <i>URI</i>, <i>String</i> of text and boolean letting the constructor know it was called from the <i>PersistenceManager</i>. 
+  <br></p>
  
  <h3><a name = "DocumentPersistenceManager" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentPersistenceManager.java">DocumentPersistenceManager</a></h3>
  <p>SOON TO BE ADDED<br></p>
