@@ -10,6 +10,12 @@
           <p>
             <ul>
               <li><a href = "#Description-Trie">Description</a></li>
+              <li><a href = "#put-Trie">put</a></li>
+              <li><a href = "#getAllSorted-Trie">getAllSorted</a></li>
+              <li><a href = "#getAllWithPrefixSorted-Trie">getAllWithPrefixSorted</a></li>
+              <li><a href = "#deleteAll-Trie">deleteAll</a></li>
+              <li><a href = "#deleteAllWithPrefix-Trie">deleteAllWithPrefix</a></li>
+              <li><a href = "#delete-Trie">delete</a></li>
             </ul>
           </p>
         <li><a href = "#MinHeap">MinHeap</a></li>
