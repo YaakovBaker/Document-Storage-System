@@ -85,6 +85,8 @@
       <br>•	 The public <b>setPersistenceManager()</b> method sets the private <i>PersistenceManager</i> instance variable. This is called by the client code.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     </ul>
- 
-<a href ="#TOP">Back To Top</a>
+ </p>
+ <p>
+<a href ="#TOP">Back To Top</a><br>
 <a href = "https://www.linkedin.com/in/yaakovbaker01/">LinkedIn</a>
+ </p>
