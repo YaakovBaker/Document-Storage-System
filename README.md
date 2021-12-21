@@ -43,14 +43,14 @@
         <li><a href = "#BTree">BTree</a></li>
           <p>
             <ul>
-              <li><a name = "#Description-BTree">Description</a></li>
-              <li><a name = "#split-BTree">split</a></li>
-              <li><a name = "#entryShiftAndSplit-BTree">entryShiftAndSplit</a></li>
-              <li><a name = "#entryExists-BTree">entryExists</a></li>
-              <li><a name = "#get-BTree">get</a></li>
-              <li><a name = "#put-BTree">put</a></li>
-              <li><a name = "#moveToDisk-BTree">moveToDisk</a></li>
-              <li><a name = "#setPersistenceManager-BTree">setPersistenceManager</a></li>
+              <li><a href = "#Description-BTree">Description</a></li>
+              <li><a href = "#split-BTree">split</a></li>
+              <li><a href = "#entryShiftAndSplit-BTree">entryShiftAndSplit</a></li>
+              <li><a href = "#entryExists-BTree">entryExists</a></li>
+              <li><a href = "#get-BTree">get</a></li>
+              <li><a href = "#put-BTree">put</a></li>
+              <li><a href = "#moveToDisk-BTree">moveToDisk</a></li>
+              <li><a href = "#setPersistenceManager-BTree">setPersistenceManager</a></li>
             </ul>
           </p>
       </ul>
