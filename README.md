@@ -31,6 +31,14 @@
             </ul>
           </p>
         <li><a href = "#Stack">Stack</a></li>
+          <p>
+            <ul>
+              <li><a href = "#Description-Stack">Description</a></li>
+              <li><a href = "#push-Stack">push</a></li>
+              <li><a href = "#pop-Stack">pop</a></li>
+              <li><a href = "#peek-Stack">peek</a></li>
+            </ul>
+          </p>
         <li><a href = "#BTree">BTree</a></li>
       </ul>
    </p>
@@ -61,10 +69,10 @@
       <br>•	 The public <a name = "remove-MinHeap"><b>remove()</b></a> method throws a <b>NoSuchElementException</b> if the heap is empty, otherwise it saves the minimum value to be deleted in a local variable and calls swap on index 1, its location, and the element at the bottom of the heap and decrement the count of elements. <b>downHeap()</b> is then called to maintain heap properties and then the location where the to be deleted element is at is set to null.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     <li><a name = "Stack" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/StackImpl.java"><b>StackImpl.java</b></a></li>
-    <p>•	A Stack stores a sequence of values in LIFO order (Last-In, First-Out). The top of the stack is where operations occur. If you want to do more than just the operations on the top of the stack then that is up to client code you create to use the operations of the stack with extra logic you include in your client code to do what you want. I implement my Stack to work like a linked list. The elements of the Stack are a <b>StackEntry</b> that contains a pointer to the next element in the stack and the data being stored. The Stack data structure itself contains a pointer to the entry at the top.
-      <br>•	 The public <b>push()</b> method accepts an element of a generic type. If it is null then an <b>IllegalArgumentException()</b> is thrown, otherwise a new <b>Stackentry</b> is created and passed that element to store it. It's next link becomes what is currently the top and then replaces it as the new top.
-      <br>•	 The public <b>pop()</b> method returns the element at the top of the stack and removes it. If the stack is empty then null is returned, otherwise the data stored in the top <b>StackEntry</b> is stored into a local variable, the top pointer points to the top <b>StackEntry's</b> next <b>StackEntry</b> as to remove any refrence to the previous top of the stack and then that local variable is returned.
-      <br>•	 The public <b>peek()</b> method returns the element stored in the top <b>Stackentry</b> without removing them, but if the stack is empty null is returned instead.
+    <p>•	<a name = "Description-Stack">A Stack</a> stores a sequence of values in LIFO order (Last-In, First-Out). The top of the stack is where operations occur. If you want to do more than just the operations on the top of the stack then that is up to client code you create to use the operations of the stack with extra logic you include in your client code to do what you want. I implement my Stack to work like a linked list. The elements of the Stack are a <b>StackEntry</b> that contains a pointer to the next element in the stack and the data being stored. The Stack data structure itself contains a pointer to the entry at the top.
+      <br>•	 The public <a name = "push-Stack"><b>push()</b></a> method accepts an element of a generic type. If it is null then an <b>IllegalArgumentException()</b> is thrown, otherwise a new <b>Stackentry</b> is created and passed that element to store it. It's next link becomes what is currently the top and then replaces it as the new top.
+      <br>•	 The public <a name = "pop-Stack"><b>pop()</b></a> method returns the element at the top of the stack and removes it. If the stack is empty then null is returned, otherwise the data stored in the top <b>StackEntry</b> is stored into a local variable, the top pointer points to the top <b>StackEntry's</b> next <b>StackEntry</b> as to remove any refrence to the previous top of the stack and then that local variable is returned.
+      <br>•	 The public <a name = "peek-Stack"><b>peek()</b></a> method returns the element stored in the top <b>Stackentry</b> without removing them, but if the stack is empty null is returned instead.
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     <li><a name = "BTree" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/impl/BTreeImpl.java"><b>BTreeImpl.java</b></a></li>
     <p>•	A BTree is a balanced-tree that supports external search in symbol tables that are kept on a disk or on the web. The tree consists of nodes that contain an array of <b>Entry</b> elements. Each <b>Node</b> object in my implementation has an even number m sized array, in my case 6, and allows for m-1 key-link pairs and at least m/2 key-link pairs except the root which can have at least 2. It also contains a count of how many entries are in that node as well as pointers to the next and previous node. Each <b>Entry</b> object contains a <b>Comparable/b> key, <b>Object</b> value, child <b>Node</b> and a boolean set to true if this is on disk and false if it's in memory. My BTree holds a few instance variables such as the root <b>Node</b>, the left most external <b>Node</b>, the height of the BTree, the number of key-value pairs in the BTree, and an instance of the <i>PersistenceManager</i> object.
