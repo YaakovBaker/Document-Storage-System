@@ -1,4 +1,4 @@
-<h1><a href = https://github.com/YaakovBaker/Document-Storage-System><Strong>Document Storage System</Strong></a></h1>
+<h1><a id = "TOP" href = https://github.com/YaakovBaker/Document-Storage-System><Strong>Document Storage System</Strong></a></h1>
 
 <h3><a id = "TOC">Table of Contents</a></h3>
 <ul>
@@ -61,4 +61,4 @@
       <br>•	 There are more methods, but I found them too simple or not necessary to include explanations for here.<br></p>
     </ul>
  
-<a href ="#TOC">Back To Top</a>
+<a href ="#TOP">Back To Top</a>
