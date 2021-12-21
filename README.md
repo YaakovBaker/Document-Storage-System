@@ -55,6 +55,9 @@
           </p>
       </ul>
    </p>
+   <li><a href = "#DocumentImpl">DocumentImpl</a></li>
+   <li><a href = "#DocumentPersistenceManager">DocumentPersistenceManager</a></li>
+   <li><a href = "#DocumentStoreImpl">DocumentStoreImpl</a></li>
  </ul>
 
 <h3><a name = "Summary"><Strong>Summary</Strong></a></h3>
