@@ -104,11 +104,12 @@
  </p>
  
  <h3><a name = "DocumentImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentImpl.java">DocumentImpl</a></h3>
- <p><br>•	 A <b>Document</b> consists of a <i>URI</i> from <i>java.net.URI</i>, either a <i>String</i> of text or an array of bytes, a <i>Map</i> of the word counts for each <i>String</i> in the <b>Document</b>'s text, if it has one, and the last use time of that <b>Document</b>. <i>DocumentImpl</i> consists of three constructors. One that accepts a <i>URI</i> and <i>String</i> of text, another that accepts a <i>URI</i> and an array of bytes, and lastly a special one that accepts a <i>URI</i>, <i>String</i> of text and boolean letting the constructor know it was called from the <i>PersistenceManager</i>. <i>DocumentImpl</i> consists of a number of methods that return the <b>Document</b> instance's data, private utility methods, and constructed data based on what data already exists. The methods in <i>DocumentImpl</i> are quite simple and don't need an explanation.
+ <p><br>•	 A <b>Document</b> consists of a <i>URI</i> from <i>java.net.URI</i>, either a <i>String</i> of text or an array of bytes, a <i>Map</i> of the word counts for each <i>String</i> in the <b>Document</b>'s text, if it has one, and the last use time of that <b>Document</b>. <i>DocumentImpl</i> consists of three constructors. One that accepts a <i>URI</i> and <i>String</i> of text, another that accepts a <i>URI</i> and an array of bytes, and lastly a special one that accepts a <i>URI</i>, <i>String</i> of text and boolean letting the constructor know it was called from the <i>PersistenceManager</i>. <i>DocumentImpl</i> consists of a number of methods that return the <b>Document</b> instance's data (getters), changing of existant data (setters), and private utility methods. The methods in <i>DocumentImpl</i> are quite simple and don't need an explanation.
   <br></p>
  
  <h3><a name = "DocumentPersistenceManager" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentPersistenceManager.java">DocumentPersistenceManager</a></h3>
- <p>SOON TO BE ADDED<br></p>
+ <p><br>•	 <i>DocumentPersistenceManager</i> consists of a <i>File</i> from <i>java.io.File</i> contatining the base directory for the documents and a <i>Gson</i> instance from <i>com.google.gson.Gson</i>. <i>DocumentPersistenceManager</i> has one constructor that accepts a <i>File</i> contatining the base directory, and has three public methods: <b>serialize()</b>, <b>deserialize()</b>, and <b>delete()</b>.  
+  <br></p>
  
   <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
   <p>SOON TO BE ADDED<br></p>
