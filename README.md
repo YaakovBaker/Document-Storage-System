@@ -57,6 +57,13 @@
    </p>
    <li><a href = "#DocumentImpl">DocumentImpl</a></li>
    <li><a href = "#DocumentPersistenceManager">DocumentPersistenceManager</a></li>
+     <p>
+      <ul>
+        <li><a href = "#DPM-ser">serialize</a></li>
+        <li><a href = "#DPM-deser">deserialize</a></li>
+        <li><a href = "#DPM-del">delete</a></li>
+      </ul>
+     </p>
    <li><a href = "#DocumentStoreImpl">DocumentStoreImpl</a></li>
  </ul>
 
@@ -111,9 +118,9 @@
  <p><br>•	 <i>DocumentPersistenceManager</i> consists of a <i>File</i> from <i>java.io.File</i> contatining the base directory for the documents and a <i>Gson</i> instance from <i>com.google.gson.Gson</i>. <i>DocumentPersistenceManager</i> has one constructor that accepts a <i>File</i> contatining the base directory, and has three public methods: <b>serialize()</b>, <b>deserialize()</b>, and <b>delete()</b>.  
   <br></p>
  <p>
-  <br>•	 The <b>serialize()</b> method
-  <br>•	 The <b>deserialize()</b> method
-  <br>•	 The <b>delete()</b> method
+  <br>•	 The <a name = "DPM-ser"><b>serialize()</b></a> method
+  <br>•	 The <a name = "DPM-deser"><b>deserialize()</b></a> method
+  <br>•	 The <a name = "DPM-del"><b>delete()</b></a> method
   <br></p>
  
   <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
