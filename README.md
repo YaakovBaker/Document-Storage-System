@@ -110,6 +110,11 @@
  <h3><a name = "DocumentPersistenceManager" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentPersistenceManager.java">DocumentPersistenceManager</a></h3>
  <p><br>•	 <i>DocumentPersistenceManager</i> consists of a <i>File</i> from <i>java.io.File</i> contatining the base directory for the documents and a <i>Gson</i> instance from <i>com.google.gson.Gson</i>. <i>DocumentPersistenceManager</i> has one constructor that accepts a <i>File</i> contatining the base directory, and has three public methods: <b>serialize()</b>, <b>deserialize()</b>, and <b>delete()</b>.  
   <br></p>
+ <p>
+  <br>•	 The <b>serialize()</b> method
+  <br>•	 The <b>deserialize()</b> method
+  <br>•	 The <b>delete()</b> method
+  <br></p>
  
   <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
   <p>SOON TO BE ADDED<br></p>
