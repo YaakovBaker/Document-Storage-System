@@ -1,18 +1,21 @@
+<head>
+    <style>
+    .redWord{
+    color:red;
+    }
+    .greenWord{
+    color:green;
+    }
+    .blueWord{
+    color:blue;
+    }
+    .yellowWord{
+    color:yellow;
+    }
+  </style>
+</head>
 <h1><a id = "TOP" href = https://github.com/YaakovBaker/Document-Storage-System><Strong>Document Storage System</Strong></a></h1>
-<style>
-  .redWord{
-  color:red;
-  }
-  .greenWord{
-  color:green;
-  }
-  .blueWord{
-  color:blue;
-  }
-  .yellowWord{
-  color:yellow;
-  }
-</style>
+
 <h3><a id = "TOC">Table of Contents</a></h3>
 <ul>
   <li><a href = "https://www.linkedin.com/in/yaakovbaker01/">Link to visit my LinkedIn</a></li>
