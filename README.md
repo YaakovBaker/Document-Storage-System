@@ -1,6 +1,6 @@
 <h1><a id = "TOP" href = https://github.com/YaakovBaker/Document-Storage-System><Strong>Document Storage System</Strong></a></h1>
 
-<h5>How To Use</h5>
+<h3>How To Use</h3>
 <p>The links in the table of contents link to sections below, except for the LinkedIn link, and the sections below link to the actual java files in the repository.
 The readMe gives overviews, in depth or general, of the different parts of the system I made. I recommend going to the java files as well to get further insight.</p>
 
