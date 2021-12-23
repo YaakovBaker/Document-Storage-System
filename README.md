@@ -124,7 +124,19 @@
   <br></p>
  
   <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
-  <p>SOON TO BE ADDED<br></p>
+  <p><br>•	 Compared to everything else so far this class has way more information and methods, over a 1000 lines of code. Going into every method in depth like earlier would too long, it makes more sense to give a general overview of what each important method does, and what the DocumentStore does. I'd reccomend clicking the link to go check out the code in depth. <br></p>
+  <p><br>•	 The public putDocument
+  <p><br>•	 The public getDocument
+  <p><br>•	 The public deleteDocument
+  <p><br>•	 The public undo
+  <p><br>•	 The public undo(URI uri)
+  <p><br>•	 The public search
+  <p><br>•	 The public searchByPrefix
+  <p><br>•	 The public deleteAll
+  <p><br>•	 The public deleteAllWithPrefix
+  <p><br>•	 The public setMaxDocumentCount
+  <p><br>•	 The public setMaxDocumentBytes
+  <br></p>
   
  <p>
 <a href ="#TOP">Back To Top</a><br>
