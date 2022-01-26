@@ -129,8 +129,10 @@ The readMe gives overviews, in depth or general, of the different parts of the s
  
   <h3><a name = "DocumentStoreImpl" href = "https://github.com/YaakovBaker/Document-Storage-System/blob/main/stage5/src/main/java/edu/yu/cs/com1320/project/stage5/impl/DocumentStoreImpl.java">DocumentStoreImpl</a></h3>
   <p><br>•	 Compared to everything else so far this class has way more information and methods, over a 1000 lines of code. Going into every method in depth like earlier would too long, it makes more sense to give a general overview of what each important method does, and what the DocumentStore does. I'd reccomend clicking the link to go check out the code in depth. <br></p>
+  <p><br>•	 The public setMaxDocumentCount accepts an integer limit to set the maximum number of documents that may be stored in memory. If the int is negative an <b>IllegalArgumentException()</b> is thrown. Then while the number of documents in the store is greater than the limit, documents will be moved to disk based on last use time (what is returned from a call to the MinHeap's remove method). 
+  <p><br>•	 The public setMaxDocumentBytes accepts an integer limit to set the maximum number of bytes of memory that may be used by all the documents in memory combined. If the int is negative an <b>IllegalArgumentException()</b> is thrown. Then while the total number of bytes of documents in memory in the store is greater than the limit, documents will be moved to disk based on last use time (what is returned from a call to the MinHeap's remove method).  
+  <p><br>•	 The public getDocument accepts a <i>URI</i> as a search key. if the <i>URI</i> is null then an <b>IllegalArgumentException()</b> is thrown.
   <p><br>•	 The public putDocument
-  <p><br>•	 The public getDocument
   <p><br>•	 The public deleteDocument
   <p><br>•	 The public undo
   <p><br>•	 The public undo(URI uri)
@@ -138,8 +140,6 @@ The readMe gives overviews, in depth or general, of the different parts of the s
   <p><br>•	 The public searchByPrefix
   <p><br>•	 The public deleteAll
   <p><br>•	 The public deleteAllWithPrefix
-  <p><br>•	 The public setMaxDocumentCount
-  <p><br>•	 The public setMaxDocumentBytes
   <br></p>
   
  <p>
