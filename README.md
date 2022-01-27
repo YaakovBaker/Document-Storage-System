@@ -78,10 +78,10 @@ The readMe gives overviews, in depth or general, of the different parts of the s
         <li><a href = "#DS-prefix">searchByPrefix</a></li>
         <li><a href = "#DS-putDocument">putDocument</a></li>
         <li><a href = "#DS-deleteDocument">deleteDocument</a></li>
-        <li><a href = "#DS-undo">undo</a></li>
-        <li><a href = "#DS-undo2">undo(URI uri)</a></li>
         <li><a href = "#DS-deleteAll">deleteAll</a></li>
         <li><a href = "#DS-prefixDelete">deleteAllWithPrefix</a></li>
+        <li><a href = "#DS-undo">undo</a></li>
+        <li><a href = "#DS-undo2">undo(URI uri)</a></li>
       </ul>
      </p>
  </ul>
@@ -151,10 +151,10 @@ The readMe gives overviews, in depth or general, of the different parts of the s
   <p><br>•	 The public <a name = "DS-prefix"><b>searchByPrefix()</b></a> method accepts a <i>String</i> keyword prefix as an argument and returns a <i>List</i> of <i>Document</i>s containing that prefix in sorted, descending order, sorted by the number of times the prefix appears in the document. If the key is null then an <b>IllegalArgumentException()</b> is thrown. It then calls the <i>Trie</i>'s <b>getAllWithPrefixSorted()</b> and stores what is returned into a <i>List</i> of <i>URI</i>s. Then the <i>List</i> of <i>URI</i>s is iterated over and for each <i>URI</i> the <i>BTree</i>'s <b>get()</b> method is called to retrieve the <i>Document</i> with that <i>URI</i>, store it in the <i>List</i> of <i>Document</i>s, and update the lastUseTime. Then before returning, if by bringing these <i>Document</i>s into memory exceeded any limits then <i>Document</i>s will have to move to disk.  
   <p><br>•	 The public <a name = "DS-putDocumen"><b>putDocument()</b></a>
   <p><br>•	 The public <a name = "DS-deleteDocument"><b>deleteDocument()</b></a>
-  <p><br>•	 The public <a name = "DS-undo"><b>undo()</b></a>
-  <p><br>•	 The public <a name = "DS-undo2"><b>undo(URI uri)</b></a>
   <p><br>•	 The public <a name = "DS-deleteAll"><b>deleteAll()</b></a>
   <p><br>•	 The public <a name = "DS-prefixDelete"><b>deleteAllWithPrefix()</b></a>
+  <p><br>•	 The public <a name = "DS-undo"><b>undo()</b></a>
+  <p><br>•	 The public <a name = "DS-undo2"><b>undo(URI uri)</b></a>
   <br></p>
   
  <p>
