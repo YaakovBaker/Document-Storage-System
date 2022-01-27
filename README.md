@@ -76,6 +76,12 @@ The readMe gives overviews, in depth or general, of the different parts of the s
         <li><a href = "#DS-get">getDocument</a></li>
         <li><a href = "#DS-search">search</a></li>
         <li><a href = "#DS-prefix">searchByPrefix</a></li>
+        <li><a href = "#DS-putDocument">putDocument</a></li>
+        <li><a href = "#DS-deleteDocument">deleteDocument</a></li>
+        <li><a href = "#DS-undo">undo</a></li>
+        <li><a href = "#DS-undo2">undo(URI uri)</a></li>
+        <li><a href = "#DS-deleteAll">deleteAll</a></li>
+        <li><a href = "#DS-prefixDelete">deleteAllWithPrefix</a></li>
       </ul>
      </p>
  </ul>
@@ -143,12 +149,12 @@ The readMe gives overviews, in depth or general, of the different parts of the s
   <p><br>•	 The public <a name = "DS-get"><b>getDocument()</b></a> method accepts a <i>URI</i> as a search key. If the <i>URI</i> is null then an <b>IllegalArgumentException()</b> is thrown. A boolean, inRefrence, signifying if the document is refrenced somewhere on the store based on the return value of invoking <b>containsKey()</b> on the refrencing <i>HashMap</i>. Then if either limit is set to 0 and inRefrence is true then we get the refrence document (<i>ImpastaDoc</i>) from the refrencing <i>HashMap</i> and if that <i>ImpastaDoc</i> is not null and its <b>isOnDisk()</b> method returns true then the actual document will be deserialized and saved into a local variable to return. Then the document is serialized again and the method returns the one we saved. If there is no refrence then a null <i>Document</i> is returned to signify there is no <i>Document</i> in the store with that <i>URI</i>. If the limits weren't 0 and the inRefrence boolean is true then the private <b>getDoc()</b> method is called. If the document is on disk it will be deserialized and saved in a local variable and then if the limits are exceeded other documents may be moved to disk to make space, then return that local variable. If it's in memory then just the BTree's <b>get()</b> method is called and that <i>Document</i> is returned. Before returning the lastUseTime variable of non-null <i>Document</i>s are updated and the <i>MinHeap</i>'s <b>reHeapify()</b> is called on that <i>Document</i>'s <i>ImpastaDoc</i> refrence.  
   <p><br>•	 The public <a name = "DS-search"><b>search()</b></a> method accepts a <i>String</i> keyword as an argument and returns a <i>List</i> of <i>Document</i>s containing that keyword in sorted, descending order, sorted by the number of times the keyword appears in the document. If the key is null then an <b>IllegalArgumentException()</b> is thrown. It then calls the <i>Trie</i>'s <b>getAllSorted()</b> and stores what is returned into a <i>List</i> of <i>URI</i>s. Then the <i>List</i> of <i>URI</i>s is iterated over and for each <i>URI</i> the <i>BTree</i>'s <b>get()</b> method is called to retrieve the <i>Document</i> with that <i>URI</i>, store it in the <i>List</i> of <i>Document</i>s, and update the lastUseTime. Then before returning, if by bringing these <i>Document</i>s into memory exceeded any limits then <i>Document</i>s will have to move to disk.
   <p><br>•	 The public <a name = "DS-prefix"><b>searchByPrefix()</b></a> method accepts a <i>String</i> keyword prefix as an argument and returns a <i>List</i> of <i>Document</i>s containing that prefix in sorted, descending order, sorted by the number of times the prefix appears in the document. If the key is null then an <b>IllegalArgumentException()</b> is thrown. It then calls the <i>Trie</i>'s <b>getAllWithPrefixSorted()</b> and stores what is returned into a <i>List</i> of <i>URI</i>s. Then the <i>List</i> of <i>URI</i>s is iterated over and for each <i>URI</i> the <i>BTree</i>'s <b>get()</b> method is called to retrieve the <i>Document</i> with that <i>URI</i>, store it in the <i>List</i> of <i>Document</i>s, and update the lastUseTime. Then before returning, if by bringing these <i>Document</i>s into memory exceeded any limits then <i>Document</i>s will have to move to disk.  
-  <p><br>•	 The public putDocument
-  <p><br>•	 The public deleteDocument
-  <p><br>•	 The public undo
-  <p><br>•	 The public undo(URI uri)
-  <p><br>•	 The public deleteAll
-  <p><br>•	 The public deleteAllWithPrefix
+  <p><br>•	 The public <a name = "DS-putDocumen"><b>putDocument()</b></a>
+  <p><br>•	 The public <a name = "DS-deleteDocument"><b>deleteDocument()</b></a>
+  <p><br>•	 The public <a name = "DS-undo"><b>undo()</b></a>
+  <p><br>•	 The public <a name = "DS-undo2"><b>undo(URI uri)</b></a>
+  <p><br>•	 The public <a name = "DS-deleteAll"><b>deleteAll()</b></a>
+  <p><br>•	 The public <a name = "DS-prefixDelete"><b>deleteAllWithPrefix()</b></a>
   <br></p>
   
  <p>
